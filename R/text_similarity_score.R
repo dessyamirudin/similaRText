@@ -1,4 +1,17 @@
-text_similarity_score = function(input_text,target_text,space=FALSE,ignore_case=TRUE,score=0,limit=length(input_text)){
+#' Text Similarity Score
+#'
+#' Generate similarity score between two text
+#'
+#' @param input_text A vector of text that need to be cleaned
+#' @param target_text A vector of text as the standard text format
+#' @param space A logical indicating whether to include space in the calculation. Default TRUE
+#' @param ignore_case A logical indicating whether to ignore case. Default TRUE
+#' @param score A numeric value indicating the score accepted as similar. Default 0
+#'
+#' @import stringr
+#' @import dplyr
+#'
+text_similarity_score = function(input_text,target_text,space=TRUE,ignore_case=TRUE,score=0){
 
   # keeping the original input intact
   df_input_original = data.frame(expand.grid(input_text,target_text)) %>%
@@ -7,7 +20,7 @@ text_similarity_score = function(input_text,target_text,space=FALSE,ignore_case=
       target_text_original=Var2) %>%
     mutate(across(where(is.factor), as.character))
 
-  if (space==TRUE){
+  if (space==FALSE){
     input_text =tolower(gsub("[[:space:]]|[.]|[,]", "", input_text))
     target_text = tolower(gsub("[[:space:]]|[.]|[,]", "", target_text))
   }
