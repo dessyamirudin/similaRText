@@ -8,8 +8,17 @@
 #' @param ignore_case A logical indicating whether to ignore case. Default TRUE
 #' @param score A numeric value indicating the score accepted as similar. Default 0
 #'
+#' @author Dessy Amirudin
+#'
 #' @import stringr
 #' @import dplyr
+#'
+#' @return A dataframe contain the origital text, target text and the score
+#'
+#' @export
+#'
+#' @example
+#' text_similarity_score(unique(data_sample$Country),"South Korea")
 #'
 text_similarity_score = function(input_text,target_text,space=TRUE,ignore_case=TRUE,score=0){
 

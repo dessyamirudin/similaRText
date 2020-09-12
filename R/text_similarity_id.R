@@ -8,9 +8,18 @@
 #' @param score A numeric value indicating the score accepted as similar. Default 0
 #' @param eps A numeric value to measure if text is close to each other, the larger the value indicating that we accept the similarity loosely. Default 0.15
 #'
+#' @author Dessy Amirudin
+#'
 #' @import stringr
 #' @import dplyr
 #' @import dbscan
+#'
+#' @return A data frame contain of the original text and the unique ID assigned to the text
+#'
+#' @export
+#'
+#' @example
+#' text_similarity_id(unique(data_sample$Country))
 #'
 text_similarity_id = function(input_text,space=FALSE,ignore_case=TRUE,score=80,eps=0.15){
 
