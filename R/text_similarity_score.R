@@ -15,7 +15,7 @@
 #'
 #' @return A dataframe contain the origital text, target text and the score
 #'
-#' @example
+#' @examples
 #' text_similarity_score(c("germany","southkorea"),"South Korea")
 #'
 #' @export

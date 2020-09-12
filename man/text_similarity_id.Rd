@@ -29,6 +29,10 @@ A data frame contain of the original text and the unique ID assigned to the text
 \description{
 Generate unique ID for identical text
 }
+\examples{
+text_similarity_id(c("South Korea","germany","southkorea","Germany"))
+
+}
 \author{
 Dessy Amirudin
 }

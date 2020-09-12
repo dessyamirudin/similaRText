@@ -29,6 +29,10 @@ A dataframe contain the origital text, target text and the score
 \description{
 Generate similarity score between two text
 }
+\examples{
+text_similarity_score(c("germany","southkorea"),"South Korea")
+
+}
 \author{
 Dessy Amirudin
 }
