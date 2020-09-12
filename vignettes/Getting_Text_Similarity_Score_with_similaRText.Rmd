@@ -1,0 +1,19 @@
+---
+title: "Getting_Text_Similarity_Score_with_similaRText"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting_Text_Similarity_Score_with_similaRText}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(similaRText)
+```
