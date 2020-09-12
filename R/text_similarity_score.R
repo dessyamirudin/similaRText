@@ -16,7 +16,7 @@
 #' @return A dataframe contain the origital text, target text and the score
 #'
 #' @example
-#' text_similarity_score(unique(data_sample$Country),"South Korea")
+#' text_similarity_score(c("germany","southkorea"),"South Korea")
 #'
 #' @export
 #'

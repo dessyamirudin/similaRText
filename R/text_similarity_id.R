@@ -17,7 +17,7 @@
 #' @return A data frame contain of the original text and the unique ID assigned to the text
 #'
 #' @example
-#' text_similarity_id(unique(data_sample$Country))
+#' text_similarity_id(c("South Korea","germany","southkorea","Germany"))
 #'
 #'@export
 #'
