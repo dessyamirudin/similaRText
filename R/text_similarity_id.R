@@ -1,3 +1,17 @@
+#' Text Similarity Id
+#'
+#' Generate unique ID for identical text
+#'
+#' @param input_text A vector of text that need to be cleaned
+#' @param space A logical indicating whether to include space in the calculation. Default TRUE
+#' @param ignore_case A logical indicating whether to ignore case. Default TRUE
+#' @param score A numeric value indicating the score accepted as similar. Default 0
+#' @param eps A numeric value to measure if text is close to each other, the larger the value indicating that we accept the similarity loosely. Default 0.15
+#'
+#' @import stringr
+#' @import dplyr
+#' @import dbscan
+#'
 text_similarity_id = function(input_text,space=FALSE,ignore_case=TRUE,score=80,eps=0.15){
 
   # keeping the original input intact
