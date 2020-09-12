@@ -15,14 +15,11 @@
 #'
 #' @return A dataframe contain the origital text, target text and the score
 #'
-#' @export
-#'
 #' @example
 #' text_similarity_score(unique(data_sample$Country),"South Korea")
 #'
-
-library(dplyr)
-library(stringr)
+#' @export
+#'
 
 text_similarity_score = function(input_text,target_text,space=TRUE,ignore_case=TRUE,score=0){
 
