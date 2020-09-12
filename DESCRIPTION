@@ -1,16 +1,18 @@
 Package: similaRText
-Title: What the Package Does (One Line, Title Case)
+Title: Measure text similarity score
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Dessy",
+           family = "Amirudin",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "amirudind@gmail.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: Measure text similarity score to ease for data cleaning.
+Depends: R (>= 4.0.2)
 License: `use_mit_license()`, `use_gpl3_license()` or friends to
     pick a license
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Imports: dplyr, stringr, dbscan
