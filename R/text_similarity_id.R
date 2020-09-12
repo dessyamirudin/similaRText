@@ -21,6 +21,11 @@
 #' @example
 #' text_similarity_id(unique(data_sample$Country))
 #'
+
+library(dplyr)
+library(stringr)
+library(dbscan)
+
 text_similarity_id = function(input_text,space=FALSE,ignore_case=TRUE,score=80,eps=0.15){
 
   # keeping the original input intact

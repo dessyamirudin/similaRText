@@ -20,6 +20,10 @@
 #' @example
 #' text_similarity_score(unique(data_sample$Country),"South Korea")
 #'
+
+library(dplyr)
+library(stringr)
+
 text_similarity_score = function(input_text,target_text,space=TRUE,ignore_case=TRUE,score=0){
 
   # keeping the original input intact
