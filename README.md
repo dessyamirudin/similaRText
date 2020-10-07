@@ -21,15 +21,20 @@ This package have two function with below description
 To understand the function, use help function
 	?text_similarity_score
 
-Example:
-a. What is the similarity between "South Korea" and "south korea"? (not case sensitive)
+#### Sample Code
+
+Sample 1
+
+What is the similarity between "South Korea" and "south korea"? (not case sensitive)
 
 	text_similarity_score("South Korea","south korea")
 	
 	  input_text target_text similarity_score
 	1 South Korea south korea              100
 	
-b. What is the similarity between "South Korea" and ("south korea","Indonesia")? (case sensitive)
+Sample 2
+
+What is the similarity between "South Korea" and ("south korea","Indonesia")? (case sensitive)
 
 	text_similarity_score("South Korea",c("south korea","Indonesia"),ignore_case = FALSE)
 	
@@ -50,6 +55,8 @@ b. What is the similarity between "South Korea" and ("south korea","Indonesia")?
 To understand the function, use help function
 
 	?text_similarity_id
+
+#### Sample code
 
 a. Grouping similar text into one id. Will be useful to give ID for person when the ID in the database is missing.
 
