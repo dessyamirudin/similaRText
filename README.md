@@ -2,7 +2,7 @@
 Package to clean text by measuring the similarity between text
 
 ## Install Package
-devtools::install_github("dessyamirudin/similaRText")
+	devtools::install_github("dessyamirudin/similaRText")
  
 ## function
 
