@@ -6,7 +6,9 @@
 \alias{similaRText-package}
 \title{similaRText: Similar text score}
 \description{
-Easily generate custom data frame summaries
+Generate similar text score between 0 to 100
+0 means very different text
+100 means similar text
 }
 \author{
 \strong{Maintainer}: Dessy Amirudin \email{amirudind@gmail.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
