@@ -19,7 +19,7 @@ text_similarity_id(
 
 \item{ignore_case}{A logical indicating whether to ignore case. Default TRUE}
 
-\item{score}{A numeric value indicating the score accepted as similar. Default 0}
+\item{score}{A numeric value indicating the score accepted as similar. Default 80}
 
 \item{eps}{A numeric value to measure if text is close to each other, the larger the value indicating that we accept the similarity loosely. Default 0.15}
 }

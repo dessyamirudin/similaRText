@@ -49,7 +49,8 @@ text_similarity_id = function(input_text,space=FALSE,ignore_case=TRUE,score=80,e
   df_return_scale = (input_length_matrix-dist.input_text)/input_length_matrix
 
   # take where the value >= score
-  df_return_scale.clean = ifelse(df_return_scale>=score/100,df_return_scale,0)
+  # df_return_scale.clean = ifelse(df_return_scale>=score/100,df_return_scale,0)
+  df_return_scale.clean = ifelse(df_return_scale>=score/100,1,0)
 
   # labeling by clustering the end result using DBSCAN
   db.cluster = dbscan(df_return_scale.clean,eps = eps,minPts = 1)

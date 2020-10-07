@@ -16,7 +16,10 @@ This package have two function with below description
 		space = TRUE,
 		ignore_case = TRUE,
 		score = 0
-	)	
+	)
+
+To understand the function, use help function
+	?text_similarity_score
 
 Example:
 a. What is the similarity between "South Korea" and "south korea"? (not case sensitive)
@@ -44,6 +47,10 @@ b. What is the similarity between "South Korea" and ("south korea","Indonesia")?
 	  eps = 0.15
 	)
 
+To understand the function, use help function
+
+	?text_similarity_id
+
 a. Grouping similar text into one id. Will be useful to give ID for person when the ID in the database is missing.
 
 Sample 1
@@ -55,8 +62,21 @@ Sample 1
 	2 South Korea  1
 	3   Indonesia  2
 
+Sample 2
+
+	text_similarity_id(c("Budi S","Budi Susilo","Kadir"),score=70)
+	
+	  input_text id
+	1      Budi S  1
+	2 Budi Susilo  1
+	3       Kadir  2
+
 ### Sample data and the usage
 Sample data is downloaded from Kaggle https://www.kaggle.com/alexisbcook/pakistan-intellectual-capital
 This data contain the list of Professor from Pakistan
 
 	data("sample_data")
+
+To understand the data, use help function
+	
+	?sample_data
