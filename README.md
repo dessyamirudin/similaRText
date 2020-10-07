@@ -1,5 +1,8 @@
 # similaRText
- package to clean text by measure the similarity between text
+Package to clean text by measuring the similarity between text
+
+## Install Package
+devtools::install_github("dessyamirudin/similaRText")
  
 ## function
 
@@ -15,6 +18,21 @@ This package have two function with below description
 		score = 0
 	)	
 
+Example:
+a. What is the similarity between "South Korea" and "south korea"? (not case sensitive)
+	> text_similarity_score("South Korea","south korea")
+	
+	  input_text target_text similarity_score
+	1 South Korea south korea              100
+	
+b. What is the similarity between "South Korea" and ("south korea","Indonesia")? (case sensitive)
+	> text_similarity_score("South Korea",c("south korea","Indonesia"),ignore_case = FALSE)
+	
+	  input_text target_text similarity_score
+	1 South Korea south korea            90.91
+	2 South Korea   Indonesia            50.00
+
+
 ### Getting the similarity score between text
 	text_similarity_id(
 	  input_text,
@@ -24,6 +42,18 @@ This package have two function with below description
 	  eps = 0.15
 	)
 
+a. Grouping similar text into one id. Will be useful to give ID for person when the ID in the database is missing.
+
+Sample 1
+	> text_similarity_id(c("south korea","Indonesia","South Korea"))
+	
+	  input_text id
+	1 south korea  1
+	2 South Korea  1
+	3   Indonesia  2
 
 ### Sample data and the usage
-data("sample_data")
+Sample data is downloaded from Kaggle https://www.kaggle.com/alexisbcook/pakistan-intellectual-capital
+This data contain the list of Professor from Pakistan
+
+	data("sample_data")
