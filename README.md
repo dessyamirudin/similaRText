@@ -35,7 +35,7 @@ b. What is the similarity between "South Korea" and ("south korea","Indonesia")?
 	2 South Korea   Indonesia            50.00
 
 
-### Getting the similarity score between text
+### Grouping similar text into 1 ID
 	text_similarity_id(
 	  input_text,
 	  space = FALSE,
