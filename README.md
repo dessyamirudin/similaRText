@@ -79,7 +79,7 @@ Sample 2
 	3       Kadir  2
 
 ### Sample data and the usage
-Sample data is downloaded from Kaggle https://www.kaggle.com/alexisbcook/pakistan-intellectual-capital
+Sample data is downloaded from [Kaggle - Pakistan Intelectual Capital]( https://www.kaggle.com/alexisbcook/pakistan-intellectual-capital)
 This data contain the list of Professor from Pakistan
 
 	data("sample_data")
