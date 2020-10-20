@@ -1,5 +1,7 @@
 # similaRText
-Package to clean text by measuring the similarity between text
+Package to clean text by measuring the similarity between text. Score between 0 to 100 where 0 mean very different and 100 mean similar text.
+
+Any input related to this package is very much appreciated.
 
 ## Install Package
 	devtools::install_github("dessyamirudin/similaRText")
